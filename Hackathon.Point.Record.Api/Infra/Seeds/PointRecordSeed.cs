@@ -1,0 +1,102 @@
+using Hackathon.Point.Record.Api.Domain.Entities;
+using Hackathon.Point.Record.Api.Domain.Enums;
+using Microsoft.EntityFrameworkCore;
+
+namespace Hackathon.Point.Record.Api.Infra.Seeds;
+
+public static class PointRecordSeed
+{
+    public static void Seed(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<PointRecordEntity>().HasData(
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 1, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 1, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 1, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 1, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 4, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 4, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 4, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 4, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 5, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 5, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 5, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 5, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 6, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 6, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 6, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 6, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 7, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 7, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 7, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 7, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 8, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 8, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 8, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 8, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 11, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 11, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 11, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 11, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 12, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 12, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 12, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 12, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 13, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 13, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 13, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 13, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 14, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 14, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 14, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 14, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 15, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 15, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 15, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 15, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 18, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 18, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 18, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 18, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 19, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 19, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 19, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 19, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 20, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 20, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 20, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 20, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 21, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 21, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 21, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 21, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 22, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 22, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 22, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 22, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 25, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 25, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 25, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 25, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 26, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 26, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 26, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 26, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 27, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 27, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 27, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 27, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 28, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 28, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 28, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 28, 17, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 29, 8, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 29, 12, 0, 0), Type = PointRecordTypeEnum.Exit },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 29, 13, 0, 0), Type = PointRecordTypeEnum.Entry },
+            new PointRecordEntity { Id = Guid.NewGuid(), UserIdentification = "seed", RegisterDate = new DateTime(2024, 3, 29, 17, 0, 0), Type = PointRecordTypeEnum.Exit }
+        );
+    }
+}
