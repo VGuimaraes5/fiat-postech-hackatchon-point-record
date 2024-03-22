@@ -8,9 +8,9 @@ WORKDIR /src
 COPY . .
 
 # restauração das dependencias e build do projeto
-WORKDIR "/src/API"
-RUN dotnet restore "API.csproj" --disable-parallel
-RUN dotnet publish "API.csproj" -c Release -o /app/publish --no-restore
+WORKDIR "/src/Hackathon.Point.Record.Api"
+RUN dotnet restore "Hackathon.Point.Record.Api.csproj" --disable-parallel
+RUN dotnet publish "Hackathon.Point.Record.Api.csproj" -c Release -o /app/publish --no-restore
 
 # inicio da etapa de publicação 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 
@@ -20,4 +20,4 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 EXPOSE $PORT
-ENTRYPOINT ["dotnet", "API.dll"]
+ENTRYPOINT ["dotnet", "Hackathon.Point.Record.Api.dll"]
