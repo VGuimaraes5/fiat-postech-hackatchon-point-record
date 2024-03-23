@@ -17,7 +17,7 @@ public class IdentityService : IIdentityService
 
     public string GetUserIdentification()
     {
-        _logger.LogWarning(JsonSerializer.Serialize(_context));
+        _logger.LogWarning(JsonSerializer.Serialize(_context.HttpContext));
         var identification = _context.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
         if (string.IsNullOrEmpty(identification)) throw new InvalidDataException("User identification not found!");
